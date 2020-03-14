@@ -1,0 +1,16 @@
+{
+  "name": "Valid HTML",
+  "description" : "Validates HTML in learning environments.",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+   {
+     "matches": ["https://codehs.com/*"],
+     "js": ["jquery.1.12.4.min.js", "validateHtml.js"],
+     "run_at": "document_idle"
+   }
+ ]
+}
